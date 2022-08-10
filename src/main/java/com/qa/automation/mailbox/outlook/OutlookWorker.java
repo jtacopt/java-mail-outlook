@@ -29,10 +29,6 @@ public class OutlookWorker {
         this.key = key;
     }
 
-    public static void main(String[] args) throws MessagingException, IOException {
-        new OutlookWorker("mb.testing1@outlook.com", "$Teste123!").retrieveMailBoxMessages();
-    }
-
     public void retrieveMailBoxMessages() throws IOException, MessagingException {
         Properties prop = getIMAPProperties();
 
