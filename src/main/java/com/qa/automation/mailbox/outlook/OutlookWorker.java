@@ -14,12 +14,14 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class OutlookWorker {
-
 
     private final String username;
     private final String key;
@@ -29,42 +31,78 @@ public class OutlookWorker {
         this.key = key;
     }
 
-    public void retrieveMailBoxMessages() throws IOException, MessagingException {
-        Properties prop = getIMAPProperties();
-
-        Session emailSession = Session.getDefaultInstance(prop);
-
+    public List<Message> findBySubject(final String subjectTextFragment) throws IOException, MessagingException {
+        List<Message> messages = new ArrayList<>();
         Store store = null;
         try {
-            store = emailSession.getStore("imap");
-            store.connect(this.username, this.key);
-            Folder emailFolder = store.getFolder("INBOX");
+            store = getEmailStore();
+            Folder emailFolder = getInboxFolder(store);
             emailFolder.open(Folder.READ_ONLY);
-
-            Message[] messages = emailFolder.getMessages();
-            for (Message message : messages) {
-                //Mail - Subject
-                message.getSubject();
-                //Mail Body
-                message.getContent().toString();
+            for (Message msg : emailFolder.getMessages()) {
+                if (msg.getSubject().contains(subjectTextFragment)) {
+                    messages.add(msg);
+                    Multipart multipart =(Multipart) msg.getContent();
+                    MimeBodyPart part = (MimeBodyPart)multipart.getBodyPart(1);
+                    if(part.getDisposition().equalsIgnoreCase("attachment")){
+                        getEmailAttach(part);
+                    }
+                }
             }
         } finally {
             if (store != null) {
                 store.close();
             }
         }
+        return messages;
+    }
 
+    private void getEmailAttach(MimeBodyPart part) throws MessagingException, IOException {
+        String destFilePath = "temp/" + part.getFileName();
+        try( FileOutputStream output = new FileOutputStream(destFilePath)) {
+            InputStream input = part.getInputStream();
+
+            byte[] buffer = new byte[4096];
+
+            int byteRead;
+
+            while ((byteRead = input.read(buffer)) != -1) {
+                output.write(buffer, 0, byteRead);
+            }
+        }
+    }
+    public List<Message> findAll() throws IOException, MessagingException {
+        List<Message> messages;
+        Store store = null;
+        try {
+            store = getEmailStore();
+            Folder emailFolder = getInboxFolder(store);
+            emailFolder.open(Folder.READ_ONLY);
+            messages = List.of(emailFolder.getMessages());
+            emailFolder.close(true);
+        } finally {
+            if (store != null) {
+                store.close();
+            }
+        }
+        return messages;
+    }
+
+    private Folder getInboxFolder(Store store) throws MessagingException {
+        return store.getFolder("INBOX");
+    }
+
+    private Store getEmailStore() throws IOException, MessagingException {
+        Properties imapProperties = getIMAPProperties();
+        Session emailSession = Session.getDefaultInstance(imapProperties);
+        Store store = emailSession.getStore("imap");
+        store.connect(this.username, this.key);
+        return store;
     }
 
     public void cleanMailBox() throws IOException, MessagingException {
-        Properties prop = getIMAPProperties();
-
-        Session emailSession = Session.getDefaultInstance(prop);
-
         Store store = null;
         try {
-            store = emailSession.getStore("imap");
-            store.connect(this.username, this.key);
+            store = getEmailStore();
             Folder emailFolder = store.getFolder("INBOX");
             emailFolder.open(Folder.READ_ONLY);
 
@@ -116,8 +154,8 @@ public class OutlookWorker {
     }
 
     private Properties getProperties(final String propertiesFile) throws IOException {
-        Properties properties = new Properties();
-        InputStream is = getClass().getClassLoader().getResourceAsStream(propertiesFile);
+        var properties = new Properties();
+        var is = getClass().getClassLoader().getResourceAsStream(propertiesFile);
         properties.load(is);
         return properties;
     }
