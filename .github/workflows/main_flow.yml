@@ -20,13 +20,12 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-        
-    - name: Build with Maven
-      run: mvn clean install -DskipTests
-      
-  test:
-   runs-on: ubuntu-latest
-   needs: [build]
-   steps:
-    - name: test
-      run: ls -l
+
+    - name: Push
+      run: |
+        touch to_delete.txt
+        git -A to_delete.txt
+        git commit -m "test"
+        git push https://x-access-token:${TOKEN}@github.com/jtacopt/qa_java_framework.git
+      env:
+        TOKEN: ${{secrets.GH_AT}}
