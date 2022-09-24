@@ -28,6 +28,6 @@ jobs:
         touch to_delete.txt
         git add to_delete.txt
         git commit -m "test"
-        git push https://x-access-token:${TOKEN}@github.com/jtacopt/qa_java_framework.git
+        git push https://x-access-token:${TOKEN}@github.com/jtacopt/java-mail-outlook.gi
       env:
         TOKEN: ${{secrets.GH_AT}}
