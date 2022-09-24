@@ -23,6 +23,8 @@ jobs:
 
     - name: Push
       run: |
+        git config --global user.email "<>"
+        git config --global user.name "El Taco Bot"
         touch to_delete.txt
         git add to_delete.txt
         git commit -m "test"
