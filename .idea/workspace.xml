@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60692d8a-904c-4025-bcfd-54b5887a3b8e" name="Changes" comment="Teste">
+      <change afterPath="$PROJECT_DIR$/my-website/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/blog/2019-05-28-first-blog-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/blog/2019-05-29-long-blog-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/blog/2021-08-01-mdx-blog-post.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/blog/2021-08-26-welcome/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/blog/authors.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/intro.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/_category_.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/congratulations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/create-a-blog-post.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/create-a-document.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/create-a-page.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/deploy-your-site.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-basics/markdown-features.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-extras/_category_.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-extras/img/docsVersionDropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-extras/img/localeDropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-extras/manage-docs-versions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docs/tutorial-extras/translate-your-site.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/docusaurus.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/sidebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/src/components/HomepageFeatures/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/src/components/HomepageFeatures/styles.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/src/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/src/pages/index.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/src/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/src/pages/markdown-page.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/static/img/docusaurus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/static/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/static/img/undraw_docusaurus_mountain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/static/img/undraw_docusaurus_react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/static/img/undraw_docusaurus_tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-website/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main_flow.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/automation/mailbox/outlook/OutlookWorker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/smtp.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_delete.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my-website/static/.nojekyll" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="site" />
+                    <option name="lastUsedInstant" value="1664118150" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1664117955" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1663974434" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2D5QiYpMHNlcZrJ96BBJyagPttt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carvajoa/IdeaProjects/java-gmail/my-website/src/pages&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\carvajoa\IdeaProjects\java-gmail\my-website\src\pages" />
+      <recent name="C:\Users\carvajoa\IdeaProjects\java-gmail\target" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carvajoa\IdeaProjects\java-gmail" />
+      <recent name="C:\Users\carvajoa\IdeaProjects\java-gmail\my-website\src\pages" />
+      <recent name="C:\Users\carvajoa\IdeaProjects\java-gmail\my-website\docs" />
+      <recent name="C:\Users\carvajoa\IdeaProjects\java-gmail\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.OutlookWorker">
+    <configuration name="GmailMailBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GmailMailBox" />
+      <module name="java-gmail" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GmailQuickstart" />
+      <module name="java-gmail" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OutlookWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.automation.mailbox.outlook.OutlookWorker" />
+      <module name="java-gmail" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java-gmail [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.OutlookWorker" />
+      <item itemvalue="Application.GmailMailBox" />
+      <item itemvalue="Application.GmailQuickstart" />
+      <item itemvalue="Maven.java-gmail [clean,install]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OutlookWorker" />
+        <item itemvalue="Application.GmailMailBox" />
+        <item itemvalue="Application.GmailQuickstart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60692d8a-904c-4025-bcfd-54b5887a3b8e" name="Changes" comment="" />
+      <created>1659986597188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659986597188</updated>
+      <workItem from="1659986598506" duration="2973000" />
+      <workItem from="1660031507974" duration="94000" />
+      <workItem from="1660033548242" duration="6403000" />
+      <workItem from="1660040747920" duration="8486000" />
+      <workItem from="1660082967133" duration="2377000" />
+      <workItem from="1660119574233" duration="6113000" />
+      <workItem from="1660140622448" duration="608000" />
+      <workItem from="1660142341306" duration="599000" />
+      <workItem from="1660151507319" duration="599000" />
+      <workItem from="1660163163362" duration="921000" />
+      <workItem from="1660204172451" duration="220000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1660126398464</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660126398464</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test workflow">
+      <created>1663975826563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663975826563</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test workflow">
+      <created>1663975961600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663975961600</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test workflow">
+      <created>1663977685944</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663977685944</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test workflow">
+      <created>1663977761209</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663977761209</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Teste">
+      <created>1663977938419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663977938419</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Test workflow" />
+    <MESSAGE value="Teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste" />
+  </component>
+</project>
